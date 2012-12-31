@@ -1,4 +1,6 @@
-class virtualbox( $ubuntu_release ) {
+class virtualbox(
+  $ubuntu_release
+) {
   apt::source { virtualbox:
     location    => 'http://download.virtualbox.org/virtualbox/debian',
     release     => $ubuntu_release,
