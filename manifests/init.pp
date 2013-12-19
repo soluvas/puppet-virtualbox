@@ -10,7 +10,7 @@ class virtualbox(
     include_src => false,
   }
   package { virtualbox:
-    name => 'virtualbox-4.2',
+    name => 'virtualbox-4.3',
     ensure => present,
     require => Apt::Source['virtualbox']
   }
